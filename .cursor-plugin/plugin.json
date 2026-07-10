@@ -6,6 +6,8 @@
     "name": "kunchit"
   },
   "license": "MIT",
+  "homepage": "https://github.com/kunchit/measured-figma",
+  "repository": "https://github.com/kunchit/measured-figma",
   "keywords": [
     "figma",
     "design",
@@ -14,5 +16,5 @@
     "ui",
     "design-to-code"
   ],
-  "logo": "assets/logo.svg"
+  "logo": "https://raw.githubusercontent.com/kunchit/measured-figma/main/assets/logo.svg"
 }

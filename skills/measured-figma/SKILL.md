@@ -77,8 +77,8 @@ Layout branches — see [`reference.md`](reference.md) § Layout branches (slide
 **Measured** gate — mandatory:
 
 1. Start dev server (project's command).
-2. Chrome DevTools MCP: set viewport to **each Figma frame width** in scope.
-3. Navigate, `scrollIntoView` the section.
+2. `resize_page` (or `emulate` for a device) to **each Figma frame width** in scope.
+3. `navigate_page` to the section URL, then `evaluate_script` with `scrollIntoView`.
 4. `evaluate_script`: `getBoundingClientRect` + `getComputedStyle` on every spec'd element (size, gap, padding, font-size, weight, line-height, radius, shadow).
 
 Trust **computed** styles — Radix/shadcn overrides class names at runtime.

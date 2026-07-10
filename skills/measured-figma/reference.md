@@ -48,7 +48,10 @@ Heading frame + content frame — gap = content.y − (heading.y + heading.heigh
 
 ## DevTools eval
 
+Tools: `resize_page` / `emulate` (viewport) → `navigate_page` → `evaluate_script` (run this).
 Adapt selectors. Run per breakpoint after `scrollIntoView`.
+
+`px()` strips units so values compare directly against Figma numbers; `boxShadow` stays a string.
 
 ```javascript
 () => {
@@ -56,6 +59,7 @@ Adapt selectors. Run per breakpoint after `scrollIntoView`.
   const rect = (el) => (el ? el.getBoundingClientRect() : null);
   const cs = (el) => (el ? getComputedStyle(el) : null);
   const round = (n) => (n == null ? null : Math.round(n));
+  const px = (v) => (v == null ? null : parseFloat(v)); // "16px" → 16
 
   // --- customize these ---
   const root = pick("[data-figma-section]") ?? pick("section");
@@ -69,13 +73,13 @@ Adapt selectors. Run per breakpoint after `scrollIntoView`.
     viewport: { w: window.innerWidth, h: window.innerHeight },
     card: cr ? { w: round(cr.width), h: round(cr.height) } : null,
     gap: cr && nr ? round(nr.left - cr.right) : null,
-    radius: cs(card)?.borderRadius,
+    radius: px(cs(card)?.borderRadius),
     shadow: cs(card)?.boxShadow,
     title: title
       ? {
-          fontSize: cs(title)?.fontSize,
-          lineHeight: cs(title)?.lineHeight,
-          fontWeight: cs(title)?.fontWeight,
+          fontSize: px(cs(title)?.fontSize),
+          lineHeight: px(cs(title)?.lineHeight),
+          fontWeight: px(cs(title)?.fontWeight),
         }
       : null,
   };

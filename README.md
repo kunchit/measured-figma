@@ -25,10 +25,6 @@ ln -s "$(pwd)" ~/.cursor/plugins/local/measured-figma
 
 Reload Cursor → Customize → confirm `measured-figma` listed.
 
-### From Git (after you push)
-
-Clone this repo, then symlink as above — or submit to [Cursor Marketplace](https://cursor.com/marketplace/publish).
-
 ## Usage
 
 1. Paste a Figma URL, or run `/measured-figma`.
@@ -53,12 +49,6 @@ measured-figma/
 ├── assets/logo.svg
 └── README.md
 ```
-
-## Publish checklist
-
-- [ ] `gh repo create measured-figma --public --source=. --push`
-- [ ] Test via `~/.cursor/plugins/local`
-- [ ] Submit at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish)
 
 ## License
 

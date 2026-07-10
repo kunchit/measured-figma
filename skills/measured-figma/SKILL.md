@@ -9,6 +9,8 @@ description: >-
 
 # Measured Figma
 
+**Requires:** Figma MCP + Chrome DevTools MCP. No DevTools MCP → say so and stop; never claim **measured** without real `getComputedStyle` numbers.
+
 Figma MCP gives **reference** output. Your job: **adapt** it to the project's stack, tokens, and components — then prove it with **measured** DevTools numbers. Never claim done from code review or screenshot alone.
 
 ## 1. Scope

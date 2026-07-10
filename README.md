@@ -16,7 +16,23 @@ Auth: your Figma account / token. Plugin ships **no** credentials.
 
 ## Install
 
-### Local (dev / try)
+### skills.sh / any agent (recommended)
+
+```bash
+npx skills add kunchit/measured-figma
+```
+
+```bash
+npx skills add kunchit/measured-figma -g -y          # global, no prompts
+npx skills add kunchit/measured-figma --list         # preview only
+npx skills add kunchit/measured-figma --skill measured-figma
+```
+
+Directory page: [skills.sh/kunchit/measured-figma](https://www.skills.sh/kunchit/measured-figma)
+
+No submit form — listing comes from install telemetry (`npx skills add`). CI installs (`ci=1`) do **not** count toward the leaderboard.
+
+### Cursor plugin (local)
 
 ```bash
 mkdir -p ~/.cursor/plugins/local
@@ -24,6 +40,8 @@ ln -s "$(pwd)" ~/.cursor/plugins/local/measured-figma
 ```
 
 Reload Cursor → Customize → confirm `measured-figma` listed.
+
+Or submit to [Cursor Marketplace](https://cursor.com/marketplace/publish).
 
 ## Usage
 

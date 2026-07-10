@@ -1,0 +1,2 @@
+# Keep plugin manifest (global *.json ignore)
+!.cursor-plugin/plugin.json

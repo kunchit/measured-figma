@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Measured Figma">
+  <rect width="128" height="128" rx="24" fill="#1a1a1a"/>
+  <rect x="28" y="24" width="40" height="28" rx="4" fill="#a259ff"/>
+  <rect x="28" y="56" width="40" height="28" rx="4" fill="#1abcfe"/>
+  <rect x="28" y="88" width="20" height="20" rx="10" fill="#0acf83"/>
+  <path d="M78 36h22M78 52h16M78 68h22M78 84h12" stroke="#f5f5f5" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="98" cy="100" r="10" fill="none" stroke="#f24e1e" stroke-width="4"/>
+  <path d="M105 107l8 8" stroke="#f24e1e" stroke-width="4" stroke-linecap="round"/>
+</svg>
